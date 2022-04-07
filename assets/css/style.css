@@ -1,0 +1,492 @@
+:root {
+    --primary: #e65f78;
+    --primary-hover: #d8576f;
+}
+.text-custom{
+    color:var(--primary);
+}
+.btn-custom{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-custom:hover{
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+.transition-5{
+    transition: .5s;
+}
+
+/**start navbar*/
+.nav-link.active {
+    color: var(--primary)!important;
+}
+.nav-link:hover{
+    color: var(--primary-hover) !important;
+}
+
+
+ /**end navbar */
+/**start header */
+.home{
+    background-image: url(/assets/img/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+.home--content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.home .home--content h2::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: typed 8s infinite ;
+}
+.scroll--down {
+    width: 30px;
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+.scroll--down i {
+    background-color: #FFF;
+    width: 2px;
+    height: 15px;
+    display: inline-block;
+    margin: 15px auto;
+    animation: translateY .5s alternate infinite;
+}
+@keyframes translateY {
+    
+
+    from{
+            transform: translateY(10px);
+        }
+      
+        
+        to{
+            transform: translateY(-10px);
+        }}
+        @keyframes typed{
+            0%{
+                content: "|k";
+            }
+            2%{
+                content: "ke";
+            }
+            3%{
+                content: "ker";
+            }
+            4%{
+                content: "kerr";
+            }
+            5%{
+                content: "kerri";
+            }
+            6%{
+                content: "kerri.";
+            }
+           
+            7%{
+                content: "kerri.";
+            }
+            8%{
+                content: "kerri";
+            }
+            9%{
+                content: "kerr";
+            }
+            10%{
+                content: "ker";
+            }
+            
+            11%{
+                content: "ke";
+            }
+            12%{
+                content: "|k";
+            }
+            13%{
+                content: "|";
+            }
+            14%{
+                content: "|K";
+            }
+            15%{
+                content: "|Ke";
+            }
+            16%{
+                content: "|Ker";
+            }
+            17%{
+                content: "|Kerr";
+            }
+            18%{
+                content: "|Kerri";
+            }
+            19%{
+                content: "|Kerri d";
+            }
+            20%{
+                content: "|Kerri de";
+            }
+            21%{
+                content: "|Kerri deo";
+            }
+            22%{
+                content: "|Kerri deo";
+            }
+            23%{
+                content: "|Kerri de";
+            }
+            24%{
+                content: "|Kerri d";
+            }
+            25%{
+                content: "|Kerri";
+            }
+            26%{
+                content: "|Kerr";
+            }
+            27%{
+                content: "|Ker";
+            }
+            28%{
+                content: "|Ke";
+            }
+            29%{
+                content: "|K";
+            }
+            30%{
+                content: "|";
+            }
+            31%{
+                content: "|a";
+            }
+            32%{
+                content: "|ap";
+            }
+            33%{
+                content: "|aph";
+            }
+            34%{
+                content: "|apho";
+            }
+            35%{
+                content: "|aphot";
+            }
+            36%{
+                content: "|aphoto";
+            }
+            37%{
+                content: "|aphoto g";
+            }
+            38%{
+                content: "|aphoto gr";
+            }
+            39%{
+                content: "|aphoto gra";
+            }
+            40%{
+                content: "|aphoto gra";
+            }
+            41%{
+                content: "|aphoto grap";
+            }
+            42%{
+                content: "|aphoto graph";
+            }
+            43%{
+                content: "|aphoto graphe";
+            }
+            44%{
+                content: "|aphoto grapher";
+            }
+            45%{
+                content: "|aphoto grapher.";
+            }
+            46%{
+                content: "|aphoto grapher";
+            }
+            47%{
+                content: "|aphoto graphe";
+            }
+            48%{
+                content: "|aphoto graph";
+            }
+            49%{
+                content: "|aphoto grap";
+            }
+            50%{
+                content: "|aphoto gra";
+            }
+            51%{
+                content: "|aphoto gr";
+            }
+            52%{
+                content: "|aphoto g";
+            }
+            53%{
+                content: "|aphoto";
+            }
+            54%{
+                content: "|aphot";
+            }
+            55%{
+                content: "|apho";
+            }
+            56%{
+                content: "|aph";
+            }
+            57%{
+                content: "|ap";
+            }
+            58%{
+                content: "|a";
+            }
+            59%{
+                content: "|";
+            }
+            60%{
+                content: "|a";
+            }
+            61%{
+                content: "|ag";
+            }
+            62%{
+                content: "|agr";
+            }
+            63%{
+                content: "|agra";
+            }
+            64%{
+                content: "|agrap";
+            }
+            65%{
+                content: "|agraph";
+            }
+            66%{
+                content: "|agraphic";
+            }
+            67%{
+                content: "|agraphic d";
+            }
+            68%{
+                content: "|agraphic de";
+            }
+            69%{
+                content: "|agraphic des";
+            }
+            70%{
+                content: "|agraphic desi";
+            }
+            71%{
+                content: "|agraphic desin";
+            }
+            72%{
+                content: "|agraphic desine";
+            }
+            73%{
+                content: "|agraphic desiner.";
+            }
+            74%{
+                content: "|agraphic desine";
+            }
+            75%{
+                content: "|agraphic desin";            }
+            76%{
+                content: "|agraphic desi";
+            }
+            77%{
+                content: "|agraphic des";
+            }
+            78%{
+                content: "|agraphic des";
+            }
+            79%{
+                content: "|agraphic de";
+            }
+            80%{
+                content: "|agraphic d";
+            }
+            81%{
+                content: "|agraphic";
+            }
+            82%{
+                content: "|agraphi";
+            }
+            83%{
+                content: "|agraph";
+            }
+            84%{
+                content: "|agrap";
+            }
+            85%{
+                content: "|agra";
+            }
+            86%{
+                content: "|agr";
+            }
+            87%{
+                content: "|ag";
+            }
+            88%{
+                content: "|a";
+            }
+            89%{
+                content: "|";
+            }
+            90%{
+                content: "";
+            }
+              
+        }
+       
+       
+            
+
+
+      /**end header */
+  /**start about */
+
+       .about li {
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            cursor: pointer;
+            transition: .5s;
+        }
+        .about li:hover a{
+            color:   #d8576f !important;
+        }
+        .about--icons li a i{
+            color:black;
+            transition: .5s;
+                    }
+                 
+
+        
+        .list-inline i:hover {
+            color:  #d8576f !important;
+
+        }
+        /**end about */
+        /**start services */
+        .services--box{
+            cursor: pointer;
+        }
+        .services--box h3{
+            padding-bottom:10px ;
+        }
+        .services--box h3::after{
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background-color: #d8576f;
+            bottom: -4px;
+            left:calc(50% - 25px);
+            transition: .5s;
+        }
+        .services--box:hover h3::after{
+            width:60px;
+            left: calc(50% - 30px);
+
+        }
+        /**end services */
+        /**start cleint */
+        .carousel-indicators{
+            bottom: -30px;
+        }
+        .carousel-indicators [data-bs-target]{
+            background-color: var(--primary)!important;
+            border-radius: 30px!important;
+            height: 8px !important;
+            width: 20px !important;
+            border:none !important;
+            transition: .6s ease !important;
+        }
+        .carousel-indicators .active{
+            width: 30px !important;
+
+        }
+        
+        
+        .client--img{
+
+            width:fit-content;
+            
+
+        }
+        /**end cleint */
+        /**start work  */
+        .portfolio .nav-tabs .nav-link{
+            text-transform: capitalize;
+            color: black;
+        }
+        .portfolio .nav-tabs .nav-link.active{
+            border: none;
+            background-color: var(--primary);
+            border-radius: 5px;
+            color: #FFF !important;
+            padding: 15px;
+        }
+       
+        
+        .portfolio .nav-tabs .nav-link:hover{
+            border: none;
+            background-color: var(--primary);
+            border-radius: 5px;
+            transition: .5s;
+            color: #FFF !important;
+        }
+        
+        .portfolio .overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgb(0, 0,0, .7);
+            color: #FFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: .5s;
+            cursor: pointer;
+            
+            transform: translateY(100%);
+        }
+        .portfolio.item img{
+            height: 100%;
+            object-fit: cover;
+        }
+        .portfolio .item:hover .overlay{
+            transform: translateY(0);
+
+        }
+        /**end work  */
+
+       
+    
